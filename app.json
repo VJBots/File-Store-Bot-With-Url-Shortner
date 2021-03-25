@@ -1,15 +1,15 @@
 {
-    "name": "Telegram Files Store Bot",
-    "description": "A Telegram Files Store Bot in Pyrogram by @AbirHasan2005",
+    "name": "File Store Bot",
+    "description": "A Telegram Files Store Bot in Pyrogram by @TeleRoid14",
     "keywords": [
         "telegram",
         "files",
         "store",
         "bot"
     ],
-    "repository": "https://github.com/AbirHasan2005/PyroFilesStoreBot",
-    "website": "https://telegram.dog/AbirHasan2005",
-    "success_url": "https://t.me/Discovery_Updates",
+    "repository": "https://github.com/P-Phreak/PyroFilesStoreBot",
+    "website": "https://telegram.dog/PredatorHackerzZ_bot",
+    "success_url": "https://t.me/TeleRoidGroup",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org or @TeleORG_Bot"
