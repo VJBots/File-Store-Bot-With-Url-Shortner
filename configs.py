@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @TeleRoid14
 
 import os
 
@@ -16,7 +16,7 @@ class Config(object):
 This is Permanent Files Store Bot!
 Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
 
-🤖 **My Name:** [Files Store Bot](https://t.me/{BOT_USERNAME})
+🤖 **My Name:** [File Store Bot](https://t.me/{TeleRoid_FileStore_Bot})
 
 📝 **Language:** [Python3](https://www.python.org)
 
@@ -26,18 +26,18 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 🧑🏻‍💻 **Developer:** @AbirHasan2005
 
-👥 **Support Group:** [Linux Repositories](https://t.me/linux_repo)
+👥 **Support Group:** [TeleRoid Support](https://t.me/TeleRoid14)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/Discovery_Updates)
+📢 **Updates Channel:** [TeleRoid Updates](https://t.me/TeleRoidGroup)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Developer:** @PredatorHackerzZ_bot
 
-Developer is Super Noob. Just Learning from Official Docs. Please Donate the developer for Keeping the Service Alive.
+Developer is Super Noob. Just Learning from Official Docs.
 
 Also remember that developer will Delete Adult Contents from Database. So better don't Store Those Kind of Things.
 
-[Donate Now](https://www.paypal.me/AbirHasan2005) (PayPal)
+
 """
 	HOME_TEXT = """
 Hi, [{}](tg://user?id={})\n\nThis is Permanent **File Store Bot**.
