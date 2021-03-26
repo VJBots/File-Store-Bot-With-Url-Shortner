@@ -16,7 +16,7 @@ class Config(object):
 This is Permanent Files Store Bot!
 Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
 
-🤖 **My Name:** [File Store Bot](https://t.me/{TeleRoid_FileStore_Bot})
+🤖 **My Name:** [File Store Bot](https://t.me/{BOT_USERNAME})
 
 📝 **Language:** [Python3](https://www.python.org)
 
@@ -24,7 +24,7 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Developer:** @PredatorHackerzZ_bot
 
 👥 **Support Group:** [TeleRoid Support](https://t.me/TeleRoid14)
 
