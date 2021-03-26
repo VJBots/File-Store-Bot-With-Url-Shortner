@@ -133,7 +133,7 @@ async def start(bot, cmd):
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton(" ⭕ Channel ⭕", url=https://t.me/TeleRoidGroup)
+								InlineKeyboardButton("Support Channel", url=invite_link.invite_link)
 							],
 							[
 								InlineKeyboardButton("🔄 Refresh / Try Again", url=f"https://telegram.dog/{BOT_USERNAME}?start=TeleRoid14_{file_id}")
@@ -350,7 +350,7 @@ async def button(bot, cmd: CallbackQuery):
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("🤖 Join Updates Channel", url=https://t.me/TeleRoidGroup)
+								InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
 							],
 							[
 								InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
