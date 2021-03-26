@@ -77,7 +77,7 @@ async def start(bot, cmd):
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("⭕ Updates Channel ⭕", url=https://t.me/TeleRoidGroup)
+								InlineKeyboardButton("⭕ Updates Channel ⭕", url=invite_link.invite_link)
 							],
 							[
 								InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
