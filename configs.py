@@ -42,5 +42,12 @@ Also remember that developer will Delete Adult Contents from Database. So better
 	HOME_TEXT = """
 Hi, [{}](tg://user?id={})\n\nThis is Permanent **File Store Bot**.
 
-Send me any file I will give you a permanent Sharable Link. I Support Channel Also! Check **About Bot** Button.
+
+How To Use This Bot & Benefits??
+
+📍 Send Me Any File & It'll Be Uploaded Into My Database & You Get The File Link.
+
+⚠️ Benifit: If You Have Telegram Movie Channel, Then Its Useful For Your Daily Usage, You can Send Me Your File & I'll Send You The Link Of Your File So Your Subscribers Can Get The File From Me & Your Channel Will Be Safe From COPYRIGHT INFRINGEMENT Issue.
+
+❌ 𝗣𝗢𝗥𝗡𝗢𝗚𝗥𝗔𝗣𝗛𝗜𝗖 𝗖𝗢𝗡𝗧𝗘𝗡𝗧𝗦 Are Strictly Prohibited & Will Get You Banned Permanently. I Support Channel Also! Check **About Bot** Button.
 """
