@@ -33,7 +33,7 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Developer:** @PredatorHackerzZ_bot
 
-Developer is Super Noob. Just Learning from Official Docs.
+Developer is Super Noob. Just Learning from Official Docs.\n@TheTeleRoid
 
 Also remember that developer will Delete Adult Contents from Database. So better don't Store Those Kind of Things.
 
