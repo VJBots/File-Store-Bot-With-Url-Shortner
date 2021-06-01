@@ -106,7 +106,7 @@ async def start(bot, cmd):
 						InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+						InlineKeyboardButton("About Bot", url="https://GitHub.com/P-Phreak"),
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
 					]
 				]
