@@ -73,11 +73,11 @@ async def start(bot, cmd):
 			except UserNotParticipant:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+					text="**𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 𝐌𝐲 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐁𝐨𝐭!**\n\n𝐃𝐮𝐞 𝐭𝐨 𝐎𝐯𝐞𝐫𝐥𝐨𝐚𝐝, 𝐎𝐧𝐥𝐲 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐫𝐬 can use the Bot!",
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("⭕ Updates Channel ⭕", url=invite_link.invite_link)
+								InlineKeyboardButton("⭕ 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url=invite_link.invite_link)
 							],
 							[
 								InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
@@ -90,7 +90,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [🛑 Support 🛑](https://t.me/TeleRoid14).",
+					text="Something went Wrong. Contact my [🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑](https://t.me/TeleRoid14).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -102,12 +102,16 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🛑 Support Group 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("About Bot", url="https://GitHub.com/P-Phreak"),
-						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+						InlineKeyboardButton(" 👥 𝐀𝐛𝐨𝐮𝐭 ", callback_data="aboutbot"),
+						InlineKeyboardButton("👨‍🔧 𝐃𝐞𝐯 ", callback_data="aboutdevs")
+					], 
+                                        [
+						InlineKeyboardButton(" 𝐆𝐢𝐭𝐡𝐮𝐛 ", url="https://GitHub.com/PredatorHackerzZ"),
+						InlineKeyboardButton("📢 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲", url="https://t.me/MoviesFlixers_DL")
 					]
 				]
 			)
@@ -120,7 +124,7 @@ async def start(bot, cmd):
 				if user.status == "kicked":
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
-						text="Sorry Sir, You are Banned to use me. Contact my [🛑 Support Group 🛑](https://t.me/TeleRoid14).",
+						text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐲 [🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 🛑](https://t.me/TeleRoid14).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -129,14 +133,14 @@ async def start(bot, cmd):
 				file_id = int(usr_cmd)
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="**Please Join My Updates Channel to use me!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+					text="**𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 𝐌𝐲 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞!**\n\n𝐃𝐮𝐞 𝐭𝐨 𝐎𝐯𝐞𝐫𝐥𝐨𝐚𝐝, 𝐎𝐧𝐥𝐲 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐫𝐬 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐁𝐨𝐭!",
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("Support Channel", url=invite_link.invite_link)
+								InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=invite_link.invite_link)
 							],
 							[
-								InlineKeyboardButton("🔄 Refresh / Try Again", url=f"https://telegram.dog/{BOT_USERNAME}?start=TeleRoid14_{file_id}")
+								InlineKeyboardButton("🔄 𝐑𝐞𝐟𝐫𝐞𝐬𝐡 / 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧", url=f"https://telegram.dog/{BOT_USERNAME}?start=TeleRoid14_{file_id}")
 							]
 						]
 					),
@@ -146,7 +150,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [🛑 Support 🛑 ](https://t.me/TeleRoid14).",
+					text="Something went Wrong. Contact my [🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑 ](https://t.me/TeleRoid14).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -171,7 +175,7 @@ async def main(bot, message):
 				f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
-					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("🛑 Support 🛑", url="https://t.me/TeleRoid14")]]
+					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14")]]
 				),
 				disable_web_page_preview=True
 			)
@@ -288,11 +292,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Source Codes of Bot", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton(" 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐨𝐟 𝐁𝐨𝐭 ", url="https://github.com/PredatorHackerzZ")
 					],
 					[
-						InlineKeyboardButton("Go Home", callback_data="gotohome"),
-						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞 ", callback_data="gotohome"),
+						InlineKeyboardButton("👥𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯 ", callback_data="aboutdevs")
 					]
 				]
 			)
@@ -305,11 +309,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Source Codes of Bot", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐨𝐟 𝐁𝐨𝐭 ", url="https://t.me/Moviesflixers_DL")
 					],
 					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-						InlineKeyboardButton("Go Home", callback_data="gotohome")
+						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="aboutbot"),
+						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gotohome")
 					]
 				]
 			)
@@ -322,12 +326,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🛑 Support 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+						InlineKeyboardButton("🤖 𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
+						InlineKeyboardButton("👮 𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs")
 					]
 				]
 			)
@@ -339,21 +343,21 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+						text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. Contact my [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩](https://t.me/TeleRoid14).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
 					return
 			except UserNotParticipant:
 				await cmd.message.edit(
-					text="**You Still Didn't Join ☹️, Please Join My Updates Channel to use me!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+					text="**𝐘𝐨𝐮 𝐒𝐭𝐢𝐥𝐥 𝐃𝐢𝐝𝐧'𝐭 𝐉𝐨𝐢𝐧 ☹️, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 𝐌𝐲 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞!**\n\n𝐃𝐮𝐞 𝐭𝐨 𝐎𝐯𝐞𝐫𝐥𝐨𝐚𝐝, 𝐎𝐧𝐥𝐲 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐫𝐬 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐁𝐨𝐭!",
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+								InlineKeyboardButton("🤖 𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=invite_link.invite_link)
 							],
 							[
-								InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
+								InlineKeyboardButton("🔄 𝐑𝐞𝐟𝐫𝐞𝐬𝐡 🔄", callback_data="refreshmeh")
 							]
 						]
 					),
@@ -362,7 +366,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+					text="Something went Wrong. Contact my [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩](https://t.me/TeleRoid14).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -374,12 +378,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🛑 Support 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+						InlineKeyboardButton("🤖 𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
+						InlineKeyboardButton("👮 𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs")
 					]
 				]
 			)
