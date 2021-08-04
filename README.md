@@ -1,4 +1,4 @@
-# PyroFilesStoreBot
+## TG-FileStore
 This is Telegram Parmanent Files Store Bot by [@TeleRoid14](https://github.com/P-Phreak).
 
 * **Language:** [Python3](https://www.python.org)
@@ -44,14 +44,14 @@ broadcast - Broadcast replied message to DB Users
 
 ### Follow on:
 <p align="left">
-<a href="https://github.com/P-Phreak"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
+<a href="https://github.com/PredatorHackerzZ"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
 </p>
 <p align="left">
-<a href="https://twitter.com/PredatorHackerZ"><img src="https://img.shields.io/badge/Twitter-Follow%20on%20Twitter-informational.svg?logo=twitter"></a>
+<a href="https://twitter.com/Cod3sofAbhi"><img src="https://img.shields.io/badge/Twitter-Follow%20on%20Twitter-informational.svg?logo=twitter"></a>
 </p>
 <p align="left">
 <a href="https://facebook.com/Abhishek.modi.58173000"><img src="https://img.shields.io/badge/Facebook-Follow%20on%20Facebook-blue.svg?logo=facebook"></a>
 </p>
 <p align="left">
-<a href="https://www.instagram.com/aviiiii___"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
+<a href="https://www.instagram.com/Cod3sofAbhi"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
 </p>
