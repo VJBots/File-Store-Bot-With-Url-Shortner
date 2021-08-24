@@ -1,5 +1,6 @@
-## TG-FileStore
-This is Telegram Parmanent Files Store Bot by [@TeleRoid14](https://github.com/P-Phreak).
+![TGFileStore](https://telegra.ph/file/d651c7b7943a9702f846d.png)
+
+⍟ 𝗧𝗵𝗶𝘀 𝗶𝘀 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗣𝗮𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗙𝗶𝗹𝗲𝘀 𝗦𝘁𝗼𝗿𝗲 𝗕𝗼𝘁 𝗯𝘆 [@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝟏𝟒](https://github.com/P-Phreak).
 
 * **Language:** [Python3](https://www.python.org)
 * **Library:** [Pyrogram](https://docs.pyrogram.org)
@@ -13,7 +14,8 @@ This is Telegram Parmanent Files Store Bot by [@TeleRoid14](https://github.com/P
 ### Demo Bot:
 <a href="https://t.me/TeleRoid_FileStore_Bot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
 
-## Configs:
+![Configs](https://telegra.ph/file/033408792afc4d4f1f8f6.png) 🤖
+
 - `API_ID` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
 - `API_HASH` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
 - `BOT_TOKEN` - Get this from [@BotFather](https://t.me/BotFather)
