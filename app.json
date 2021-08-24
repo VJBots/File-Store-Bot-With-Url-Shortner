@@ -1,13 +1,13 @@
 {
     "name": "File Store Bot",
-    "description": "A Telegram Files Store Bot in Pyrogram by @TheTeleRoid",
+    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @TheTeleRoid",
     "keywords": [
         "telegram",
         "files",
         "store",
         "bot"
     ],
-    "repository": "https://github.com/P-Phreak/PyroFilesStoreBot",
+    "repository": "https://github.com/PredatorHackerzZ/PyroFilesStoreBot",
     "website": "https://telegram.dog/PredatorHackerzZ_bot",
     "success_url": "https://t.me/TeleRoidGroup",
     "env": {
