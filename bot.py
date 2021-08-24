@@ -1,4 +1,4 @@
-# (c) @TeleRoidGroup
+# (c) @TeleRoidGroup || @PredatorHackerzZ
 
 import os
 import time
@@ -80,7 +80,7 @@ async def start(bot, cmd):
 								InlineKeyboardButton("⭕ 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url=invite_link.invite_link)
 							],
 							[
-								InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
+								InlineKeyboardButton("🔄 𝐑𝐞𝐟𝐫𝐞𝐬𝐡 🔄", callback_data="refreshmeh")
 							]
 						]
 					),
@@ -106,11 +106,11 @@ async def start(bot, cmd):
 						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton(" 👥 𝐀𝐛𝐨𝐮𝐭 ", callback_data="aboutbot"),
+						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭 ", callback_data="aboutbot"),
 						InlineKeyboardButton("👨‍🔧 𝐃𝐞𝐯 ", callback_data="aboutdevs")
 					], 
                                         [
-						InlineKeyboardButton(" 𝐆𝐢𝐭𝐡𝐮𝐛 ", url="https://GitHub.com/PredatorHackerzZ"),
+						InlineKeyboardButton("🌐 𝐆𝐢𝐭𝐡𝐮𝐛 ", url="https://GitHub.com/PredatorHackerzZ"),
 						InlineKeyboardButton("📢 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲", url="https://t.me/MoviesFlixers_DL")
 					]
 				]
@@ -150,7 +150,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑 ](https://t.me/TeleRoid14).",
+					text="Something went Wrong. Contact my [🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 🛑 ](https://t.me/TeleRoid14).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -309,7 +309,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐨𝐟 𝐁𝐨𝐭 ", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞𝐬 𝐨𝐟 𝐁𝐨𝐭 ", url="https://t.me/Moviesflixers_DL")
 					],
 					[
 						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="aboutbot"),
@@ -343,7 +343,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. Contact my [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩](https://t.me/TeleRoid14).",
+						text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐲 [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩](https://t.me/TeleRoid14).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -366,7 +366,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩](https://t.me/TeleRoid14).",
+					text="Something went Wrong. Contact my [⭕ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 ⭕](https://t.me/TeleRoid14).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
