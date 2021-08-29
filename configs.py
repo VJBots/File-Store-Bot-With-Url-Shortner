@@ -46,10 +46,8 @@ class Config(object):
 
 [𝐃𝐨𝐧𝐚𝐭𝐞 𝐍𝐨𝐰](https://www.paypal.me/AbhishekKumarIN47) (𝐏𝐚𝐲𝐏𝐚𝐥)
 """
-"""
 	HOME_TEXT = """
 𝐇𝐞𝐥𝐥𝐨, [{}](tg://user?id={})\n\n𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 **𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐁𝐨𝐭**.
-
 
 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 & 𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬??
 
