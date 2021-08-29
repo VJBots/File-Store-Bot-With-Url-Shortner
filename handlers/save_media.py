@@ -48,8 +48,8 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
         )
         share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(str(SaveMessage.message_id))}"
         await editable.edit(
-            f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
-            f"Just Click the link to get your files!",
+            f"**𝐁𝐚𝐭𝐜𝐡 𝐅𝐢𝐥𝐞𝐬 𝐒𝐭𝐨𝐫𝐞𝐝 𝐢𝐧 𝐦𝐲 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞!**\n\n𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐋𝐢𝐧𝐤 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞𝐬: {share_link} \n\n"
+            f"𝐉𝐮𝐬𝐭 𝐂𝐥𝐢𝐜𝐤 𝐭𝐡𝐞 𝐥𝐢𝐧𝐤 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞𝐬!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
@@ -86,10 +86,10 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
         await forwarded_msg.reply_text(
             f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!",
             parse_mode="Markdown", disable_web_page_preview=True)
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{str_to_b64(file_er_id)}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
         await editable.edit(
-            f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\n"
-            f"Just Click the link to get your file!",
+            f"**𝐘𝐨𝐮𝐫 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞𝐝 𝐢𝐧 𝐦𝐲 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞!**\n\n𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐋𝐢𝐧𝐤 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞: {share_link} \n\n"
+            f"𝐉𝐮𝐬𝐭 𝐂𝐥𝐢𝐜𝐤 𝐭𝐡𝐞 𝐥𝐢𝐧𝐤 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
