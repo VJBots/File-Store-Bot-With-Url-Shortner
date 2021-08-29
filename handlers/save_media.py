@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @AbirHasan2005 | @PredatorHackerzZ
 
 import asyncio
 from configs import Config
@@ -22,7 +22,7 @@ async def ForwardToChannel(bot: Client, message: Message, editable: Message):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Ban User", callback_data=f"ban_user_{str(editable.chat.id)}")]
+                        [InlineKeyboardButton("👤𝐁𝐚𝐧 𝐔𝐬𝐞𝐫", callback_data=f"ban_user_{str(editable.chat.id)}")]
                     ]
                 )
             )
@@ -43,18 +43,18 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
             text=message_ids_str,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("Delete Batch", callback_data="closeMessage")
+                InlineKeyboardButton("𝐃𝐞𝐥𝐞𝐭𝐞 𝐁𝐚𝐭𝐜𝐡", callback_data="closeMessage")
             ]])
         )
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{str_to_b64(str(SaveMessage.message_id))}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(str(SaveMessage.message_id))}"
         await editable.edit(
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
             f"Just Click the link to get your files!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"),
-                  InlineKeyboardButton("Support Group", url="https://t.me/DevsZone")]]
+                [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
+                 [InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup"),
+                  InlineKeyboardButton("⭕ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ⭕", url="https://t.me/TeleRoid14")]]
             ),
             disable_web_page_preview=True
         )
@@ -62,7 +62,7 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
             chat_id=int(Config.LOG_CHANNEL),
             text=f"#BATCH_SAVE:\n\n[{editable.reply_to_message.from_user.first_name}](tg://user?id={editable.reply_to_message.from_user.id}) Got Batch Link!",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Open Link", url=share_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)]])
         )
     except Exception as err:
         await editable.edit(f"Something Went Wrong!\n\n**Error:** `{err}`")
@@ -73,7 +73,7 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Ban User", callback_data=f"ban_user_{str(editable.chat.id)}")]
+                    [InlineKeyboardButton("👤𝐁𝐚𝐧 𝐔𝐬𝐞𝐫", callback_data=f"ban_user_{str(editable.chat.id)}")]
                 ]
             )
         )
@@ -92,9 +92,9 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
             f"Just Click the link to get your file!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"),
-                  InlineKeyboardButton("Support Group", url="https://t.me/DevsZone")]]
+                [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
+                 [InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup"),
+                  InlineKeyboardButton("⭕ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ⭕", url="https://t.me/TeleRoid14")]]
             ),
             disable_web_page_preview=True
         )
@@ -108,7 +108,7 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Ban User", callback_data=f"ban_user_{str(editable.chat.id)}")]
+                        [InlineKeyboardButton("👤𝐁𝐚𝐧 𝐔𝐬𝐞𝐫", callback_data=f"ban_user_{str(editable.chat.id)}")]
                     ]
                 )
             )
@@ -122,7 +122,7 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Ban User", callback_data=f"ban_user_{str(editable.chat.id)}")]
+                    [InlineKeyboardButton("👤𝐁𝐚𝐧 𝐔𝐬𝐞𝐫", callback_data=f"ban_user_{str(editable.chat.id)}")]
                 ]
             )
         )
