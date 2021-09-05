@@ -7,8 +7,8 @@
         "store",
         "bot"
     ],
-    "repository": "https://github.com/PredatorHackerzZ/PyroFilesStoreBot",
-    "website": "https://telegram.dog/PredatorHackerzZ_bot",
+    "repository": "https://github.com/PredatorHackerzZ/TG-FileStore",
+    "website": "https://telegram.dog/PredatorHackerzZ",
     "success_url": "https://t.me/TeleRoidGroup",
     "env": {
         "API_ID": {
