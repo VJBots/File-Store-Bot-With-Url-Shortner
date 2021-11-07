@@ -47,16 +47,19 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🔆 sᴜᴘᴘᴏʀᴛ ", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("🚸 ᴄʜᴀɴɴᴇʟ ", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭 ", callback_data="aboutbot"),
-						InlineKeyboardButton("👨‍🔧 𝐃𝐞𝐯 ", callback_data="aboutdevs")
+						InlineKeyboardButton("👥 ᴀʙᴏᴜᴛ ", callback_data="aboutbot"),
+						InlineKeyboardButton("👨‍🔧 ᴅᴇᴠ ", callback_data="aboutdevs")
 					], 
                                         [
-						InlineKeyboardButton("🌐 𝐆𝐢𝐭𝐡𝐮𝐛 ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("📢 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲", url="https://t.me/MoviesFlixers_DL")
+						InlineKeyboardButton("🌐 ɢɪᴛʜᴜʙ ", url="https://GitHub.com/PredatorHackerzZ"),
+						InlineKeyboardButton("⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
+					]
+                                        [
+						InlineKeyboardButton("🔐 ᴄʟᴏsᴇ ", callback_data="closeMessage") 
 					]
 				]
             )
@@ -285,11 +288,11 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
 					[
-						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞𝐬 𝐨𝐟 𝐁𝐨𝐭 ", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("🔅 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/Moviesflixers_DL")
 					],
 					[
-						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs"),
-						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gotohome")
+						InlineKeyboardButton("👥 ᴀʙᴏᴜᴛ ᴍᴀsᴛᴇʀ", callback_data="aboutdevs"),
+						InlineKeyboardButton("🏠 ʜᴏᴍᴇ", callback_data="gotohome")
 					]
 	        ]
             )
@@ -303,11 +306,11 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                                         [
-						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞𝐬 𝐨𝐟 𝐁𝐨𝐭 ", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("🔅 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/Moviesflixers_DL")
 					],
 					[
-						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭 ", callback_data="aboutbot"),
-						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gotohome")
+						InlineKeyboardButton("👥 ᴀʙᴏᴜᴛ", callback_data="aboutbot"),
+						InlineKeyboardButton("🏠 ʜᴏᴍᴇ", callback_data="gotohome")
 					]
                 ]
             )
@@ -321,17 +324,20 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-						InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🔆 sᴜᴘᴘᴏʀᴛ ", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("🚸 ᴄʜᴀɴɴᴇʟ ", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭 ", callback_data="aboutbot"),
-						InlineKeyboardButton("👨‍🔧 𝐃𝐞𝐯 ", callback_data="aboutdevs")
+						InlineKeyboardButton("👥 ᴀʙᴏᴜᴛ ", callback_data="aboutbot"),
+						InlineKeyboardButton("👨‍🔧 ᴅᴇᴠ ", callback_data="aboutdevs")
 					], 
                                         [
-						InlineKeyboardButton("🌐 𝐆𝐢𝐭𝐡𝐮𝐛 ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("📢 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲", url="https://t.me/MoviesFlixers_DL")
-	            ]
+						InlineKeyboardButton("🌐 ɢɪᴛʜᴜʙ ", url="https://GitHub.com/PredatorHackerzZ"),
+						InlineKeyboardButton("⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
+					]
+                                        [
+						InlineKeyboardButton("🔐 ᴄʟᴏsᴇ ", callback_data="closeMessage") 
+					]
                 ]
             )
         )
@@ -378,12 +384,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🛑 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🛑", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🔅 sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("🚸 ᴄʜᴀɴɴᴇʟ", url="https://t.me/TeleRoidGroup")
 					],
 					[
-						InlineKeyboardButton("🤖 𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
-						InlineKeyboardButton("👮 𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs")
+						InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data="aboutbot"),
+						InlineKeyboardButton("👮 ᴀʙᴏᴜᴛ ᴅᴇᴠ", callback_data="aboutdevs")
 					]
 				]
 			)
