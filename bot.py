@@ -57,7 +57,7 @@ async def start(bot: Client, cmd: Message):
                                         [
 						InlineKeyboardButton("🌐 ɢɪᴛʜᴜʙ ", url="https://GitHub.com/PredatorHackerzZ"),
 						InlineKeyboardButton("⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
-					]
+					], 
                                         [
 						InlineKeyboardButton("🔐 ᴄʟᴏsᴇ ", callback_data="closeMessage") 
 					]
@@ -334,7 +334,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                                         [
 						InlineKeyboardButton("🌐 ɢɪᴛʜᴜʙ ", url="https://GitHub.com/PredatorHackerzZ"),
 						InlineKeyboardButton("⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
-					]
+					], 
                                         [
 						InlineKeyboardButton("🔐 ᴄʟᴏsᴇ ", callback_data="closeMessage") 
 					]
