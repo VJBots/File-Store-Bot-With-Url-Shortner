@@ -47,19 +47,17 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔆 sᴜᴘᴘᴏʀᴛ ", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🚸 ᴄʜᴀɴɴᴇʟ ", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/TeleRoidGroup"),
+						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
+                                        ],
+                                        [
+						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs"),
+						InlineKeyboardButton("💢 Sᴏᴜʀᴄᴇ ", url="https://GitHub.com/PredatorHackerzZ"),
+						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
 					],
-					[
-						InlineKeyboardButton("👥 ᴀʙᴏᴜᴛ ", callback_data="aboutbot"),
-						InlineKeyboardButton("👨‍🔧 ᴅᴇᴠ ", callback_data="aboutdevs")
-					], 
                                         [
-						InlineKeyboardButton("🌐 ɢɪᴛʜᴜʙ ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
-					], 
-                                        [
-						InlineKeyboardButton("🔐 ᴄʟᴏsᴇ ", callback_data="closeMessage") 
+						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
 					]
 				]
             )
