@@ -23,19 +23,19 @@ Send Me any Media or File.I can Work In Channel too Add Me to Channel with Edit 
 
 ╭────[ **🔅FɪʟᴇSᴛᴏʀᴇBᴏᴛ🔅**]────⍟
 │
-├🔸🤖 **𝐌𝐲 𝐍𝐚𝐦𝐞:** [𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐁𝐨𝐭](https://t.me/{BOT_USERNAME})
+├🔸🤖 **My Name:** [𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐁𝐨𝐭](https://t.me/{BOT_USERNAME})
 │
-├🔸📝 **𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞:** [𝐏𝐲𝐭𝐡𝐨𝐧𝟑](https://www.python.org)
+├🔸📝 **Language:** [𝐏𝐲𝐭𝐡𝐨𝐧𝟑](https://www.python.org)
 │
-├🔹📚 **𝐋𝐢𝐛𝐫𝐚𝐫𝐲:** [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦](https://docs.pyrogram.org)
+├🔹📚 **Library:** [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦](https://docs.pyrogram.org)
 │
-├🔹📡 **𝐇𝐨𝐬𝐭𝐞𝐝 𝐨𝐧:** [𝐇𝐞𝐫𝐨𝐤𝐮](https://heroku.com)
+├🔹📡 **Hosted On:** [𝐇𝐞𝐫𝐨𝐤𝐮](https://heroku.com)
 │
-├🔸👨‍💻 **𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫:** [@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫](https://t.me/PredatorHackerzZ) 
+├🔸👨‍💻 **Developer:** [@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫](https://t.me/PredatorHackerzZ) 
 │
-├🔹👥 **𝐁𝐨𝐭𝐬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭:** [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/TeleRoid14)
+├🔹👥 **Bot Support:** [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/TeleRoid14)
 │
-├🔸🔔 **𝐁𝐨𝐭𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥:** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/TeleRoidGroup)
+├🔸🔔 **Bot Updates:** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/TeleRoidGroup)
 │
 ╰──────[ 😎 ]───────────⍟
 """
@@ -48,16 +48,16 @@ Send Me any Media or File.I can Work In Channel too Add Me to Channel with Edit 
 
 𝐀𝐥𝐬𝐨 𝐫𝐞𝐦𝐞𝐦𝐛𝐞𝐫 𝐭𝐡𝐚𝐭 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐰𝐢𝐥𝐥 𝐃𝐞𝐥𝐞𝐭𝐞 𝐀𝐝𝐮𝐥𝐭 𝐂𝐨𝐧𝐭𝐞𝐧𝐭𝐬 𝐟𝐫𝐨𝐦 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞. 𝐒𝐨 𝐛𝐞𝐭𝐭𝐞𝐫 𝐝𝐨𝐧'𝐭 𝐒𝐭𝐨𝐫𝐞 𝐓𝐡𝐨𝐬𝐞 𝐊𝐢𝐧𝐝 𝐨𝐟 𝐓𝐡𝐢𝐧𝐠𝐬.
 
-[𝐃𝐨𝐧𝐚𝐭𝐞 𝐍𝐨𝐰](https://www.paypal.me/AbhishekKumarIN47) (𝐏𝐚𝐲𝐏𝐚𝐥)
+[**Donate Me**](https://www.paypal.me/AbhishekKumarIN47) (𝐏𝐚𝐲𝐏𝐚𝐥)
 """
 	HOME_TEXT = """
-𝐇𝐞𝐥𝐥𝐨, [{}](tg://user?id={})\n\n𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 **𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐁𝐨𝐭**.
+Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
 
-𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 & 𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬??
+How to Use Bot & it's Benefits??
 
-📢 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐀𝐧𝐲 𝐅𝐢𝐥𝐞 & 𝐈𝐭'𝐥𝐥 𝐁𝐞 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐈𝐧𝐭𝐨 𝐌𝐲 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 & 𝐘𝐨𝐮 𝐆𝐞𝐭 𝐓𝐡𝐞 𝐅𝐢𝐥𝐞 𝐋𝐢𝐧𝐤.
+📢 Send me any File & It will be uploaded in My Database & You will Get the File Link.
 
-⚠️ 𝐁𝐞𝐧𝐢𝐟𝐢𝐭: 𝐈𝐟 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐌𝐨𝐯𝐢𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥, 𝐓𝐡𝐞𝐧 𝐈𝐭𝐬 𝐔𝐬𝐞𝐟𝐮𝐥 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐃𝐚𝐢𝐥𝐲 𝐔𝐬𝐚𝐠𝐞, 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐅𝐢𝐥𝐞 & 𝐈'𝐥𝐥 𝐒𝐞𝐧𝐝 𝐘𝐨𝐮 𝐓𝐡𝐞 𝐋𝐢𝐧𝐤 𝐎𝐟 𝐘𝐨𝐮𝐫 𝐅𝐢𝐥𝐞 𝐒𝐨 𝐘𝐨𝐮𝐫 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐫𝐬 𝐂𝐚𝐧 𝐆𝐞𝐭 𝐓𝐡𝐞 𝐅𝐢𝐥𝐞 𝐅𝐫𝐨𝐦 𝐌𝐞 & 𝐘𝐨𝐮𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐖𝐢𝐥𝐥 𝐁𝐞 𝐒𝐚𝐟𝐞 𝐅𝐫𝐨𝐦 𝐂𝐎𝐏𝐘𝐑𝐈𝐆𝐇𝐓 𝐈𝐍𝐅𝐑𝐈𝐍𝐆𝐄𝐌𝐄𝐍𝐓 𝐈𝐬𝐬𝐮𝐞.
+⚠️ Benefits: If you have a TeleGram Movie Channel or Any Copyright Channel, Then Its Useful for Daily Usage, You can Send Me Your File & I will Send Permanent Link to You & Channel will be Safe from **CopyRight Infringement** Issue. I support Channel Also You Can Check **About Bot**.
 
-❌ 𝗣𝗢𝗥𝗡𝗢𝗚𝗥𝗔𝗣𝗛𝗜𝗖 𝗖𝗢𝗡𝗧𝗘𝗡𝗧𝗦 𝐀𝐫𝐞 𝐒𝐭𝐫𝐢𝐜𝐭𝐥𝐲 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐭𝐞𝐝 & 𝐖𝐢𝐥𝐥 𝐆𝐞𝐭 𝐘𝐨𝐮 𝐁𝐚𝐧𝐧𝐞𝐝 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭𝐥𝐲. 𝐈 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐬𝐨! 𝐂𝐡𝐞𝐜𝐤 **𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭** 𝐁𝐮𝐭𝐭𝐨𝐧.
+❌ **PORNOGRAPHY CONTENTS** are strictly prohibited & get Permanent Ban.
 """
