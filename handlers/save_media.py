@@ -48,13 +48,13 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
         )
         share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(str(SaveMessage.message_id))}"
         await editable.edit(
-            f"**𝐁𝐚𝐭𝐜𝐡 𝐅𝐢𝐥𝐞𝐬 𝐒𝐭𝐨𝐫𝐞𝐝 𝐢𝐧 𝐦𝐲 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞!**\n\n𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐋𝐢𝐧𝐤 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞𝐬: {share_link} \n\n"
-            f"𝐉𝐮𝐬𝐭 𝐂𝐥𝐢𝐜𝐤 𝐭𝐡𝐞 𝐥𝐢𝐧𝐤 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞𝐬!",
+            f"**Batch files Added in Database!**\n\nHere is the Permanent Link Of Your Media: {share_link} \n\n"
+            f"Just Click On The Given Shareable Link!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
-                 [InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup"),
-                  InlineKeyboardButton("⭕ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ⭕", url="https://t.me/TeleRoid14")]]
+                [[InlineKeyboardButton("Open Link", url=share_link)],
+                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"),
+                  InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14")]]
             ),
             disable_web_page_preview=True
         )
@@ -88,13 +88,13 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
             parse_mode="Markdown", disable_web_page_preview=True)
         share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
         await editable.edit(
-            f"**𝐘𝐨𝐮𝐫 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞𝐝 𝐢𝐧 𝐦𝐲 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞!**\n\n𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐋𝐢𝐧𝐤 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞: {share_link} \n\n"
-            f"𝐉𝐮𝐬𝐭 𝐂𝐥𝐢𝐜𝐤 𝐭𝐡𝐞 𝐥𝐢𝐧𝐤 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮𝐫 𝐟𝐢𝐥𝐞!",
+            f"**Your Media Stored in My Database!**\n\nHere is the Permanent Shareable Link Of Your Files: {share_link} \n\n"
+            f"Just Click On the Link to Reterive the Files!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
-                 [InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup"),
-                  InlineKeyboardButton("⭕ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ⭕", url="https://t.me/TeleRoid14")]]
+                [[InlineKeyboardButton("Open Link", url=share_link)],
+                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"),
+                  InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14")]]
             ),
             disable_web_page_preview=True
         )
