@@ -1,5 +1,4 @@
-pyrogram==2.0.26
-tgcrypto==1.2.3
+pyrogram==1.4.16
 TgCrypto
 motor
 aiofiles
