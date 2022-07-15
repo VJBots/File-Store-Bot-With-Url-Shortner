@@ -3,22 +3,49 @@
 import os
 import asyncio
 import traceback
-from binascii import Error
-from pyrogram import Client, filters
-from pyrogram.errors import UserNotParticipant, FloodWait, QueryIdInvalid
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
+from binascii import (
+    Error
+)
+from pyrogram import (
+    Client,
+    filters
+)
+from pyrogram.errors import (
+    UserNotParticipant,
+    FloodWait,
+    QueryIdInvalid
+)
+from pyrogram.types import (
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+    CallbackQuery,
+    Message
+)
 from configs import Config
 from handlers.database import db
-from handlers.add_user_to_db import AddUserToDatabase
-from handlers.send_file import SendMediaAndReply
+from handlers.add_user_to_db import add_user_to_database
+from handlers.send_file import send_media_and_reply
 from handlers.helpers import b64_to_str, str_to_b64
 from handlers.check_user_status import handle_user_status
-from handlers.force_sub_handler import handle_force_sub
+from handlers.force_sub_handler import (
+    handle_force_sub,
+    get_invite_link
+)
 from handlers.broadcast_handlers import main_broadcast_handler
-from handlers.save_media import SaveMediaInChannel, SaveBatchMediaInChannel
+from handlers.save_media import (
+    save_media_in_channel,
+    save_batch_media_in_channel
+)
 
 MediaList = {}
-Bot = Client(Config.BOT_USERNAME, bot_token=Config.BOT_TOKEN, api_id=Config.API_ID, api_hash=Config.API_HASH)
+
+Bot = Client(
+    name=Config.BOT_USERNAME,
+    in_memory=True,
+    bot_token=Config.BOT_TOKEN,
+    api_id=Config.API_ID,
+    api_hash=Config.API_HASH
+)
 
 
 @Bot.on_message(filters.private)
@@ -39,27 +66,25 @@ async def start(bot: Client, cmd: Message):
     
     usr_cmd = cmd.text.split("_", 1)[-1]
     if usr_cmd == "/start":
-        await AddUserToDatabase(bot, cmd)
+        await add_user_to_database(bot, cmd)
         await cmd.reply_text(
             Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
-            parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-				[
-					[
-						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/TeleRoidGroup"),
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
-                                        ],
-                                        [
-						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Sᴏᴜʀᴄᴇ ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
-					],
-                                        [
-						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
-					]
-				]
+                [
+                    [
+                        InlineKeyboardButton("BotsList Channel", url="https://t.me/PayForBotz")
+                    ],
+                    [
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
+                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                    ]
+                ]
             )
         )
     else:
@@ -72,20 +97,25 @@ async def start(bot: Client, cmd: Message):
             message_ids = []
             if GetMessage.text:
                 message_ids = GetMessage.text.split(" ")
+                _response_msg = await cmd.reply_text(
+                    text=f"**Total Files:** `{len(message_ids)}`",
+                    quote=True,
+                    disable_web_page_preview=True
+                )
             else:
                 message_ids.append(int(GetMessage.message_id))
             for i in range(len(message_ids)):
-                await SendMediaAndReply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
+                await send_media_and_reply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
 
 
-@Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.edited & ~filters.chat(Config.DB_CHANNEL))
+@Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.chat(Config.DB_CHANNEL))
 async def main(bot: Client, message: Message):
 
     if message.chat.type == "private":
 
-        await AddUserToDatabase(bot, message)
+        await add_user_to_database(bot, message)
 
         if Config.UPDATES_CHANNEL is not None:
             back = await handle_force_sub(bot, message)
@@ -99,6 +129,7 @@ async def main(bot: Client, message: Message):
 
         if Config.OTHER_USERS_CAN_SAVE_FILE is False:
             return
+
         await message.reply_text(
             text="**Choose an option from below:**",
             reply_markup=InlineKeyboardMarkup([
@@ -120,7 +151,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.message_id)
-            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{str_to_b64(file_er_id)}"
+            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -132,11 +163,10 @@ async def main(bot: Client, message: Message):
                 await forwarded_msg.reply_text(
                     f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/c/{private_ch}/{CH_edit.message_id}) Channel's Broadcasted File's Button Added!")
         except FloodWait as sl:
-            await asyncio.sleep(sl.x)
+            await asyncio.sleep(sl.value)
             await bot.send_message(
                 chat_id=int(Config.LOG_CHANNEL),
-                text=f"#FloodWait:\nGot FloodWait of `{str(sl.x)}s` from `{str(message.chat.id)}` !!",
-                parse_mode="Markdown",
+                text=f"#FloodWait:\nGot FloodWait of `{str(sl.value)}s` from `{str(message.chat.id)}` !!",
                 disable_web_page_preview=True
             )
         except Exception as err:
@@ -144,7 +174,6 @@ async def main(bot: Client, message: Message):
             await bot.send_message(
                 chat_id=int(Config.LOG_CHANNEL),
                 text=f"#ERROR_TRACEBACK:\nGot Error from `{str(message.chat.id)}` !!\n\n**Traceback:** `{err}`",
-                parse_mode="Markdown",
                 disable_web_page_preview=True
             )
 
@@ -157,7 +186,10 @@ async def broadcast_handler_open(_, m: Message):
 @Bot.on_message(filters.private & filters.command("status") & filters.user(Config.BOT_OWNER))
 async def sts(_, m: Message):
     total_users = await db.total_users_count()
-    await m.reply_text(text=f"**Total Users in DB:** `{total_users}`", parse_mode="Markdown", quote=True)
+    await m.reply_text(
+        text=f"**Total Users in DB:** `{total_users}`",
+        quote=True
+    )
 
 
 @Bot.on_message(filters.private & filters.command("ban_user") & filters.user(Config.BOT_OWNER))
@@ -281,35 +313,35 @@ async def button(bot: Client, cmd: CallbackQuery):
     if "aboutbot" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_BOT_TEXT,
-            parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-					[
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/Moviesflixers_DL")
-					],
-					[
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ Mᴀsᴛᴇʀ", callback_data="aboutdevs"),
-						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="gotohome")
-					]
-	        ]
+                    [
+                        InlineKeyboardButton("Source Codes of Bot",
+                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                    ],
+                    [
+                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
+                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                    ]
+                ]
             )
         )
 
     elif "aboutdevs" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_DEV_TEXT,
-            parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                                        [
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/Moviesflixers_DL")
-					],
-					[
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ", callback_data="aboutbot"),
-						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="gotohome")
-					]
+                    [
+                        InlineKeyboardButton("Source Codes of Bot",
+                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                    ],
+                    [
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                    ]
                 ]
             )
         )
@@ -317,78 +349,76 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif "gotohome" in cb_data:
         await cmd.message.edit(
             Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-            parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/TeleRoidGroup"),
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
-                                        ],
-                                        [
-						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Sᴏᴜʀᴄᴇ ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
-					],
-                                        [
-						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
-					]
+                        InlineKeyboardButton("BotsList Channel", url="https://t.me/PayForBotz")
+                    ],
+                    [
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
+                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
+                    ],
+                    [
+                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                    ]
                 ]
             )
         )
 
     elif "refreshForceSub" in cb_data:
         if Config.UPDATES_CHANNEL:
+            if Config.UPDATES_CHANNEL.startswith("-100"):
+                channel_chat_id = int(Config.UPDATES_CHANNEL)
+            else:
+                channel_chat_id = Config.UPDATES_CHANNEL
             try:
-                user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
+                user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
                         text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
-                        parse_mode="markdown",
                         disable_web_page_preview=True
                     )
                     return
             except UserNotParticipant:
-                invite_link = await bot.create_chat_invite_link(int(Config.UPDATES_CHANNEL))
+                invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**You still didn't joined my Updates Channel 😑, Please Join My Updates Channel**\n\nDue to Overload Only Channel Subscribers can Use this Bot",
-	            reply_markup=InlineKeyboardMarkup(
-						[
-							[
-								InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
-							],
-							[
-								InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
-							]
-						]
-                    ),
-                    parse_mode="markdown"
+                    text="**I like Your Smartness But Don't Be Oversmart! 😑**\n\n",
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            ],
+                            [
+                                InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
+                            ]
+                        ]
+                    )
                 )
                 return
             except Exception:
                 await cmd.message.edit(
                     text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
-                    parse_mode="markdown",
                     disable_web_page_preview=True
                 )
                 return
         await cmd.message.edit(
             text=Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-            parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-				[
-					[
-						InlineKeyboardButton("🔅 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🔆 Cʜᴀɴɴᴇʟ", url="https://t.me/TeleRoidGroup")
-					],
-					[
-						InlineKeyboardButton("🤖 Aʙᴏᴜᴛ Bᴏᴛ", callback_data="aboutbot"),
-						InlineKeyboardButton("👮 Aʙᴏᴜᴛ Dᴇᴠ", callback_data="aboutdevs")
-					]
-				]
-			)
+                [
+                    [
+                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                    ],
+                    [
+                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                    ]
+                ]
+            )
         )
 
     elif cb_data.startswith("ban_user_"):
@@ -418,7 +448,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                                ]))
 
     elif "addToBatchFalse" in cb_data:
-        await SaveMediaInChannel(bot, editable=cmd.message, message=cmd.message.reply_to_message)
+        await save_media_in_channel(bot, editable=cmd.message, message=cmd.message.reply_to_message)
 
     elif "getBatchLink" in cb_data:
         message_ids = MediaList.get(f"{str(cmd.from_user.id)}", None)
@@ -426,7 +456,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             await cmd.answer("Batch List Empty!", show_alert=True)
             return
         await cmd.message.edit("Please wait, generating batch link ...")
-        await SaveBatchMediaInChannel(bot=bot, editable=cmd.message, message_ids=message_ids)
+        await save_batch_media_in_channel(bot=bot, editable=cmd.message, message_ids=message_ids)
         MediaList[f"{str(cmd.from_user.id)}"] = []
 
     elif "closeMessage" in cb_data:
@@ -434,7 +464,7 @@ async def button(bot: Client, cmd: CallbackQuery):
 
     try:
         await cmd.answer()
-    except QueryIdInvalid:
-        pass
+    except QueryIdInvalid: pass
+
 
 Bot.run()
