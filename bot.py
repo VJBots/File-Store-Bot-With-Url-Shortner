@@ -8,6 +8,7 @@ from binascii import (
 )
 from pyrogram import (
     Client,
+    enums,
     filters
 )
 from pyrogram.errors import (
@@ -103,7 +104,7 @@ async def start(bot: Client, cmd: Message):
                     disable_web_page_preview=True
                 )
             else:
-                message_ids.append(int(GetMessage.message_id))
+                message_ids.append(int(GetMessage.id))
             for i in range(len(message_ids)):
                 await send_media_and_reply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
         except Exception as err:
@@ -113,7 +114,7 @@ async def start(bot: Client, cmd: Message):
 @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.chat(Config.DB_CHANNEL))
 async def main(bot: Client, message: Message):
 
-    if message.chat.type == "private":
+    if message.chat.type == enums.ChatType.PRIVATE:
 
         await add_user_to_database(bot, message)
 
@@ -139,7 +140,7 @@ async def main(bot: Client, message: Message):
             quote=True,
             disable_web_page_preview=True
         )
-    elif message.chat.type == "channel":
+    elif message.chat.type == enums.ChatType.CHANNEL:
         if (message.chat.id == int(Config.LOG_CHANNEL)) or (message.chat.id == int(Config.UPDATES_CHANNEL)) or message.forward_from_chat or message.forward_from:
             return
         elif int(message.chat.id) in Config.BANNED_CHAT_IDS:
@@ -150,18 +151,18 @@ async def main(bot: Client, message: Message):
 
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
-            file_er_id = str(forwarded_msg.message_id)
+            file_er_id = str(forwarded_msg.id)
             share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
-            CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id,
+            CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
             if message.chat.username:
                 await forwarded_msg.reply_text(
-                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.message_id}) Channel's Broadcasted File's Button Added!")
+                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")
             else:
                 private_ch = str(message.chat.id)[4:]
                 await forwarded_msg.reply_text(
-                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/c/{private_ch}/{CH_edit.message_id}) Channel's Broadcasted File's Button Added!")
+                    f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/c/{private_ch}/{CH_edit.id}) Channel's Broadcasted File's Button Added!")
         except FloodWait as sl:
             await asyncio.sleep(sl.value)
             await bot.send_message(
