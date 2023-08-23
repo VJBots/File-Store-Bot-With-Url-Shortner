@@ -11,6 +11,19 @@ from pyrogram.types import (
 from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
 
+def generate_random_alphanumeric():
+    """Generate a random 8-letter alphanumeric string."""
+    characters = string.ascii_letters + string.digits
+    random_chars = ''.join(random.choice(characters) for _ in range(8))
+    return random_chars
+
+def get_short(url):
+    rget = requests.get(f"https://{Config.SHORTLINK_URL}/api?api={Config.SHORTLINK_API}&url={url}&alias={generate_random_alphanumeric()}")
+    rjson = rget.json()
+    if rjson["status"] == "success" or rget.status_code == 200:
+        return rjson["shortenedUrl"]
+    else:
+        return url
 
 async def forward_to_channel(bot: Client, message: Message, editable: Message):
     try:
@@ -50,11 +63,13 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             ]])
         )
         share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(str(SaveMessage.id))}"
+        short_link = await get_short(share_link)
         await editable.edit(
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
             f"Just Click the link to get your files!",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Open Link", url=share_link)],
+                [[InlineKeyboardButton("Open Link", url=share_link),
+                  InlineKeyboardButton("Short Link", url=short_link)],
                  [InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
                   InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14")]]
             ),
@@ -88,12 +103,14 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!",
             disable_web_page_preview=True)
         share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
+        short_link = await get_short(share_link)
         await editable.edit(
             "**Your File Stored in my Database!**\n\n"
             f"Here is the Permanent Link of your file: {share_link} \n\n"
             "Just Click the link to get your file!",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Open Link", url=share_link)],
+                [[InlineKeyboardButton("Open Link", url=share_link),
+                  InlineKeyboardButton("Short Link", url=short_link)],
                  [InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
                   InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14")]]
             ),
