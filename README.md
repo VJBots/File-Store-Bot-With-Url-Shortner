@@ -49,6 +49,19 @@
 ### Deploy Now For Shortner:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PredatorHackerzZ/TG-FileStore/tree/shortner)
 
+### Deploy On VPS:
+<details><summary>Deploy To VPS</summary>
+<p>
+<pre>
+git clone https://github.com/PredatorHackerzZ/TG-FileStore
+# Install Packages
+pip3 install -r requirements.txt
+Edit configs.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
+
 ## Commands:
 ```
 start - start the bot
