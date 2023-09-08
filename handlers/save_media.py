@@ -1,6 +1,9 @@
 # (c) @AbirHasan2005 | @PredatorHackerzZ
 
 import asyncio
+import requests
+import string
+import random
 from configs import Config
 from pyrogram import Client
 from pyrogram.types import (
