@@ -1,6 +1,6 @@
 {
-    "name": "File Store Bot with Api",
-    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @PredatorHackerzZ",
+    "name": "File Store Bot",
+    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @TheTeleRoid",
     "keywords": [
         "telegram",
         "files",
@@ -8,8 +8,8 @@
         "bot"
     ],
     "repository": "https://github.com/PredatorHackerzZ/TG-FileStore",
-    "website": "https://www.DevPy.in",
-    "success_url": "https://telegram.me/TeleRoidGroup",
+    "website": "https://telegram.dog/PredatorHackerzZ",
+    "success_url": "https://t.me/TeleRoidGroup",
     "logo": "https://telegra.ph/file/b39906f572822b3ab82c8.jpg",
     "env": {
         "API_ID": {
@@ -29,12 +29,6 @@
         },
         "BOT_OWNER": {
             "description": "Bot Owner UserID"
-        },
-        "SHORTLINK_URL": {
-            "description": "Url Shortner Link without https://"
-        },
-        "SHORTLINK_API": {
-            "description": "Url Shortner Api"
         },
         "DATABASE_URL": {
             "description": "MongoDB Database URI for Saving UserID for Broadcast."
