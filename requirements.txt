@@ -4,3 +4,6 @@ motor
 aiofiles
 dnspython
 psutil
+requests
+aiohttp==3.7.4.post0
+beautifulsoup4==4.9.3
