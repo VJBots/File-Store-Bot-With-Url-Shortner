@@ -3,17 +3,17 @@
 import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", "9529563"))
-  API_HASH = os.environ.get("API_HASH", "a6c1e1c8daecd5d1f7da03d42032d09a")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "6561581223:AAGcf-P8kfymZ0sXZktph3sbjmVMNR6R2rA")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "CF_Study_Bot")
-  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001580035304"))
+  API_ID = int(os.environ.get("API_ID", ""))
+  API_HASH = os.environ.get("API_HASH", "")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "GreyMatterslinks.in")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "20eb8456008878c0349fc79d40fb4d1634cccf12")
-  BOT_OWNER = int(os.environ.get("BOT_OWNER", "5151412494"))
-  DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://GreyMatter64616:GreyMatter24410062@cluster0.lgnzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001682019198")
-  LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001737875604")
+  BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
+  DATABASE_URL = os.environ.get("DATABASE_URL", "")
+  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+  LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "")
   BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
   FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
   BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
@@ -43,4 +43,4 @@ Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edi
   HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent FileStore Bot.
 
-Join: @Cinematic_Fusion"""
+Join: @GreyMatter_Bots"""
