@@ -12,7 +12,7 @@
 - You can also Do Force Sub to a Channel to allow access the Bot.
 
 ### Demo Bot:
-<a href="https://t.me/TeleRoid_FileStore_Bot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
+<a href="https://t.me/CF_Study_Bot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
 
 ![Configs](https://telegra.ph/file/033408792afc4d4f1f8f6.png) 🤖
 
@@ -32,7 +32,7 @@
 	- This for some getting user info. If any new User added to DB, Bot will send Log to that Logs Channel. You can use same DB Channel ID.
 
 ### Deploy Now:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AVPriyankA/KDramasFlix-FilesBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Greymattersbot/URL-Shortener-File-Store-Bot)
 
 ## Commands:
 ```
