@@ -74,7 +74,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝘾𝙁 𝘽𝙖𝙘𝙠𝙪𝙥", url="https://t.me/Cinematic_Fusion")
+                        InlineKeyboardButton("Updates Channel", url="https://t.me/GreyMatter_Bots")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -82,8 +82,8 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝘾𝙁 𝙂𝙧𝙤𝙪𝙥", url="https://t.me/OTT_Movies_Series_Group"),
-                        InlineKeyboardButton("𝘾𝙁 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥", url="https://t.me/CF_Support_Group")
+                        InlineKeyboardButton("Support Group", url="https://t.me/GreyMatter_Support"),
+                        InlineKeyboardButton("YouTube Channel", url="https://bit.ly/43x8Jhe")
                     ]
                 ]
             )
@@ -124,7 +124,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [𝘾𝙁 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/CF_Support_Group)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/GreyMatter_Support)",
                                      disable_web_page_preview=True)
             return
 
@@ -319,7 +319,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStor")
+                                             url="https://greylinks.in/iNTOJzfb")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -337,7 +337,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                                             url="https://greylinks.in/iNTOJzfb")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -354,7 +354,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝘾𝙁 𝘽𝙖𝙘𝙠𝙪𝙥", url="https://t.me/Cinematic_Fusion")
+                        InlineKeyboardButton("Updates Channel", url="https://t.me/GreyMatter_Bots")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -362,8 +362,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝘾𝙁 𝙂𝙧𝙤𝙪𝙥", url="https://t.me/OTT_Movies_Series_Group"),
-                        InlineKeyboardButton("𝘾𝙁 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥", url="https://t.me/CF_Support_Group")
+                        InlineKeyboardButton("Support Group", url="https://t.me/GreyMatter_Support"),
+                        InlineKeyboardButton("YouTube Channel", url="https://bit.ly/43x8Jhe")
                     ]
                 ]
             )
@@ -379,7 +379,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [𝘾𝙁 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/CF_Support_Group).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/GreyMatter_Support).",
                         disable_web_page_preview=True
                     )
                     return
@@ -401,7 +401,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [𝘾𝙁 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/CF_Support_Group).",
+                    text="Something went Wrong. Contact my [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/GreyMatter_Support).",
                     disable_web_page_preview=True
                 )
                 return
@@ -411,8 +411,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝘾𝙁 𝙈𝙤𝙙 𝘼𝙋𝙆𝙨", url="https://t.me/CF_Mod_APKs"),
-                        InlineKeyboardButton("𝘾𝙁 𝘽𝙖𝙘𝙠𝙪𝙥", url="https://t.me/Cinematic_Fusion")
+                        InlineKeyboardButton("Updates Channel", url="https://t.me/GreyMatter_Bots"),
+                        InlineKeyboardButton("Support Group", url="https://t.me/GreyMatter_Support")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
