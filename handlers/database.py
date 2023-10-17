@@ -1,5 +1,3 @@
-# (c) @PredatorHackerzZ
-
 import datetime
 import motor.motor_asyncio
 from configs import Config
