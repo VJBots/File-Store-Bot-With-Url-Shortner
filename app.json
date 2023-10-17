@@ -1,25 +1,25 @@
 {
     "name": "File Store Bot",
-    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @TheTeleRoid",
+    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @VJ_Botz",
     "keywords": [
         "telegram",
         "files",
         "store",
         "bot"
     ],
-    "repository": "https://github.com/PredatorHackerzZ/TG-FileStore",
-    "website": "https://telegram.dog/PredatorHackerzZ",
-    "success_url": "https://t.me/TeleRoidGroup",
+    "repository": "https://github.com/VJBots/File-Store-Bot-With-Url-Shortner",
+    "website": "https://telegram.dog/VJ_Botz",
+    "success_url": "https://t.me/VJ_Bot_Disscussion",
     "logo": "https://telegra.ph/file/b39906f572822b3ab82c8.jpg",
     "env": {
         "API_ID": {
-            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+            "description": "Get this value from my.telegram.org"
         },
         "API_HASH": {
-            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+            "description": "Get this value from my.telegram.org"
         },
         "BOT_TOKEN": {
-            "description": "Get this from @BotFather XD"
+            "description": "Get this from @BotFather"
         },
         "BOT_USERNAME": {
             "description": "Your Bot Username which you sent to @BotFather (Without [@])"
