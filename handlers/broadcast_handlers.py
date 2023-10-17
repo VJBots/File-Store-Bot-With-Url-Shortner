@@ -1,5 +1,3 @@
-# (c) @PredatorHackerzZ
-
 import time
 import string
 import random
