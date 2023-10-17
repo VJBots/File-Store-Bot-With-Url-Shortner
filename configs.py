@@ -1,5 +1,3 @@
-# (c) @PredatorHackerzZ || @TeleRoidGroup
-
 import os
 
 class Config(object):
