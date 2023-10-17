@@ -55,7 +55,7 @@ banned_users - Get All Banned Users [Owner Only]
 
 <p align="middle">
 <img src="https://wallpapercave.com/wp/wp8674389.jpg" width="150" height="150"><br>
-<img src="https://badgen.net/badge/Name/PredatorHackerzZ/FF33FF?icon=awesome&labelColor=0080FF"></a>
+<img src="https://badgen.net/badge/Name/Tech_VJ/FF33FF?icon=awesome&labelColor=0080FF"></a>
 <img src="https://badgen.net/badge/Skills/python/Red?icon=terminal&labelColor=blue"></a>
 <a href="https://telegram.dog/KingVJ01"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
 <a href="https://github.com/VJBots"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=Green"></a>
