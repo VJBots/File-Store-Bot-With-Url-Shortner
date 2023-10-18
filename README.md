@@ -18,6 +18,9 @@
 Use these commands:
 <br>
 <br>
+• Runtime: Python 3
+<br>
+<br>
 • Build Command: <code>pip3 install -U -r requirements.txt</code>
 <br>
 <br>
