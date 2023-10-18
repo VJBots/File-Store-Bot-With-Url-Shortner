@@ -11,7 +11,7 @@
 - You can also Broadcast anythings via this Bot.
 - You can also Do Force Sub to a Channel to allow access the Bot.
 
-  ### Deploy On Render
+### Deploy On Render
 <details><summary>Deploy To Render</summary>
 <br>
 <b>
