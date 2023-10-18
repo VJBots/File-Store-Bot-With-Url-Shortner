@@ -42,8 +42,12 @@ Use these settings when adding a monitor:</b>
 </details>
 
 ### Deploy On Heroku 
-<summary>Deploy To Render</summary>
-[![Deploy On Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/VJBots/VJ-Auto-Forward-Bot)
+<details><summary>Deploy To Heroku</summary>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/VJBots/VJ-Auto-Forward-Bot">
+<img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
+</a>
+</details>
 
 ### Demo Bot:
 <a href="https://telegram.me/VJ_Botz"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
