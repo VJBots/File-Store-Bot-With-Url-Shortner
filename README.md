@@ -65,5 +65,5 @@ banned_users - Get All Banned Users [Owner Only]
 <a href="https://www.instagram.com/tech.vj"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
 
 # Credit
-- [Tech VJ](https://telegram.me/KingVj01) Thanks For Fixing Error In Relo & Make Deployable on Web Platform. 💝
-- Thanks To All Who Help In This Journey. ♥️
+- <b>Thanks To [Tech VJ](https://telegram.me/KingVj01) For Fixing Error In Relo & Make Deployable on Web Platform.<b> 💝
+- <b>Thanks To All Who Help In This Journey.<b> ♥️
