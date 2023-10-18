@@ -1,6 +1,6 @@
 ![TGFileStore](https://telegra.ph/file/d651c7b7943a9702f846d.png)
 
-⍟ 𝗧𝗵𝗶𝘀 𝗶𝘀 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗣𝗮𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗙𝗶𝗹𝗲𝘀 𝗦𝘁𝗼𝗿𝗲 𝗕𝗼𝘁 𝗯𝘆 [VJ_Botz](https://telegram.dog/VJ_Botz).
+⍟ <b>𝗧𝗵𝗶𝘀 𝗶𝘀 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗣𝗮𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗙𝗶𝗹𝗲𝘀 𝗦𝘁𝗼𝗿𝗲 𝗕𝗼𝘁 𝗯𝘆 [VJ_Botz](https://telegram.dog/VJ_Botz).<b>
 
 * **Language:** [Python3](https://www.python.org)
 * **Library:** [Pyrogram](https://docs.pyrogram.org)
@@ -65,5 +65,5 @@ banned_users - Get All Banned Users [Owner Only]
 <a href="https://www.instagram.com/tech.vj"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
 
 # Credit
-- <b>Thanks To [Tech VJ](https://telegram.me/KingVj01) For Fixing Error In Relo & Make Deployable on Web Platform.<b> 💝
+- <b>Thanks To [Tech VJ](https://telegram.me/KingVj01) For Fixing Error In Repo & Make Repo Deployable on Web Platform.<b> 💝
 - <b>Thanks To All Who Help In This Journey.<b> ♥️
