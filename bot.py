@@ -363,7 +363,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton("Support Group", url="https://t.me/VJ_Bot_Disscussion"),
-                        InlineKeyboardButton("YouTube Channel", url="https://bit.ly/43x8Jhe")
+                        InlineKeyboardButton("YouTube Channel", url="https://youtube.com/@Tech_VJ")
                     ]
                 ]
             )
