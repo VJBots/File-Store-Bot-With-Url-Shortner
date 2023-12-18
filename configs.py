@@ -1,8 +1,8 @@
 import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", "27344784"))
-  API_HASH = os.environ.get("API_HASH", "a12613f54c74d00bfb76cf8f0688c2ee")
+  API_ID = int(os.environ.get("API_ID", ""))
+  API_HASH = os.environ.get("API_HASH", "")
   BOT_TOKEN = os.environ.get("BOT_TOKEN", "6919202862:AAG_6HCNZavbdRah9Nmfm7MjV0ccChq6wHA")
   BOT_USERNAME = os.environ.get("BOT_USERNAME", "VM_FILE_STORE_BOT")
   DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002056408106"))
