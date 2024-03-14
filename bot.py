@@ -83,7 +83,7 @@ async def start(bot: Client, cmd: Message):
                     ],
                     [
                         InlineKeyboardButton("Owner", url="https://t.me/iTS_ViSHWA14"),
-                        InlineKeyboardButton("Developer", url="https://t.me/THE_DS_OFFICIAL")
+                        InlineKeyboardButton("Developer", url="https://t.me/iTS_ViSHWA14")
                     ]
                 ]
             )
