@@ -23,7 +23,7 @@ Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edi
 
 ╭────[ 🔅FɪʟᴇSᴛᴏʀᴇBᴏᴛ🔅]────⍟
 │
-├🔸 My Name: [FileStore Bot](https://t.me/latest_tv_show_File_store_bot)
+├🔸 My Name: [FileStore Bot](BOT_USERNAME)
 │
 ├🔸 Language: [Python 3](https://www.python.org)
 │
