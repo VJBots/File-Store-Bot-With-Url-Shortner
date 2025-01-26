@@ -1,17 +1,17 @@
 import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", ""))
-  API_HASH = os.environ.get("API_HASH", "")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
-  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "MoneyKamalo.com")
-  SHORTLINK_API = os.environ.get('SHORTLINK_API', "0eefb93e1e3ce9470a7033115ceb1bad13a9d674")
-  BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
-  DATABASE_URL = os.environ.get("DATABASE_URL", "")
-  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-  LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+  API_ID = int(os.environ.get("API_ID", "22787559"))
+  API_HASH = os.environ.get("API_HASH", "e771139d8f3d4ae57f663ad049bbb710")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "6957865617:AAErJV_3eAe6mQVFU8g1kvDRwUm66i3vVkE")
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "latest_tv_show_File_store_bot")
+  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002117171789"))
+  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "publicearn.com")
+  SHORTLINK_API = os.environ.get('SHORTLINK_API', "9a696c4ea657a9791396336c3d1d84fafe02eb74")
+  BOT_OWNER = int(os.environ.get("BOT_OWNER", "1562792211"))
+  DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Cluster0:Cluster0@cluster0.kailvlv.mongodb.net/?retryWrites=true&w=majority")
+  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001970358116")
+  LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001881381645"))
   BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
   FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
   BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
@@ -32,11 +32,11 @@ Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edi
 ╰──────[ 😎 ]───────────⍟
 """
   ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿: [VJ](https://telegram.me/KingVj01)
+🧑🏻‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿: [LTS](https://t.me/Latestshowtv)
  
  I am Super noob Please Support My Hard Work.
 
-[Donate Me](https://t.me/KingVj01)
+[Donate Me](https://t.me/Latestshowtv)
 """
   HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
