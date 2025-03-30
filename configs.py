@@ -5,12 +5,12 @@ class Config(object):
   API_HASH = os.environ.get("API_HASH", "2061c55207cfee4f106ff0dc331fe3d9")
   BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
   BOT_USERNAME = os.environ.get("BOT_USERNAME", "@moviesfileupdate_bot")
-  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002368981263"))
+  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002317900657"))
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "modijiurl.com")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "872e80ec20b336c3b988292378ea7dd5604be38f")
   BOT_OWNER = int(os.environ.get("BOT_OWNER", "7951767281"))
   DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://nr385708:bs6GdimYoAzmHbRF@cluster0.xtpwl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002393184501")
+  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002312706219")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002461306484"))
   BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
   FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
@@ -23,7 +23,7 @@ Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edi
 
 ╭────[ 🔅FɪʟᴇSᴛᴏʀᴇBᴏᴛ🔅]────⍟
 │
-├🔸 My Name: [FileStore Bot](https://t.me/{BOT_USERNAME})
+├🔸 My Name: [FileStore Bot](https://t.me/moviesfileupdate_bot)
 │
 ├🔸 Language: [Python 3](https://www.python.org)
 │
