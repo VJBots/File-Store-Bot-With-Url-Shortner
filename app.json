@@ -1,15 +1,15 @@
 {
-    "name": "File Store Bot",
-    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @VJ_Botz",
+    "name": "CWT™ File Store Bot",
+    "description": "A Telegram Files Store Bot to protect your Files in Pyrogram by @Cartoonworldtelugu_india",
     "keywords": [
         "telegram",
         "files",
         "store",
         "bot"
     ],
-    "repository": "https://github.com/VJBots/File-Store-Bot-With-Url-Shortner",
-    "website": "https://telegram.dog/VJ_Botz",
-    "success_url": "https://t.me/VJ_Bot_Disscussion",
+    "repository": "https://github.com/VJ_Botz/File-Store-Bot-With-Url-Shortner",
+    "website": "https://www.Cartoonworldteluguindia.blogspot.com",
+    "success_url": "https://t.me/Cartooworldtelugu_india",
     "logo": "https://telegra.ph/file/b39906f572822b3ab82c8.jpg",
     "env": {
         "API_ID": {
