@@ -1,15 +1,15 @@
 import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", ""))
-  API_HASH = os.environ.get("API_HASH", "")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
-  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "MoneyKamalo.com")
-  SHORTLINK_API = os.environ.get('SHORTLINK_API', "0eefb93e1e3ce9470a7033115ceb1bad13a9d674")
-  BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
-  DATABASE_URL = os.environ.get("DATABASE_URL", "")
+  API_ID = int(os.environ.get("API_ID", "25230605"))
+  API_HASH = os.environ.get("API_HASH", "b7d6c13e37d52cbbea25742f1c8b40cd")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "8173754492:AAEiZ2dv_tUtrEWwl9-wwWRsWV_eqkSRONU")
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Mms_hub18_bot")
+  DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "https://t.me/+K0ZqQxVEpCgyYWY1"))
+  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "bharatlinks.com")
+  SHORTLINK_API = os.environ.get('SHORTLINK_API', "229853ecbbbbd01d73da405efce80c3acb8654ca")
+  BOT_OWNER = int(os.environ.get("BOT_OWNER", "https://t.me/just_night13"))
+  DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://facknet1999:GjMN6ZY5R3AbPx56@cluster0.6a3fnf0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
   BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
@@ -23,20 +23,13 @@ Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edi
 
 ╭────[ 🔅FɪʟᴇSᴛᴏʀᴇBᴏᴛ🔅]────⍟
 │
-├🔸 My Name: [FileStore Bot](https://t.me/{BOT_USERNAME})
+├🔸 My Name: [FileStore Bot](http://t.me/Mms_hub18_bot})
 │
 ├🔸 Language: [Python 3](https://www.python.org)
 │
 ├🔹 Library: [Pyrogram](https://docs.pyrogram.org)
 │
 ╰──────[ 😎 ]───────────⍟
-"""
-  ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿: [VJ](https://telegram.me/KingVj01)
- 
- I am Super noob Please Support My Hard Work.
-
-[Donate Me](https://t.me/KingVj01)
 """
   HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
