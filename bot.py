@@ -1,4 +1,6 @@
-# (c) @TeleRoidGroup || @PredatorHackerzZ
+# Don't Remove Credit Tg - @VJ_Bots
+# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+# Ask Doubt on telegram @KingVJ01
 
 import os
 import asyncio
@@ -74,7 +76,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/VJ_Botz")
+                        InlineKeyboardButton("Updates Channel", url="https://t.me/VJ_Bots")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
