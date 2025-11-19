@@ -1,3 +1,7 @@
+# Don't Remove Credit Tg - @VJ_Bots
+# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+# Ask Doubt on telegram @KingVJ01
+
 import datetime
 from configs import Config
 from handlers.database import Database
