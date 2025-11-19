@@ -76,7 +76,7 @@ Use these settings when adding a monitor:</b>
 - `BOT_TOKEN` - Get this from [@BotFather](https://t.me/BotFather)
 - `BOT_USERNAME` - You Bot Username. *(Without [@])*
 - `DB_CHANNEL` - A Telegram Channel ID.
-	- Make a Channel for Storing Files. We will use that as Database. Channel must be Private! Else you will be Copyright by [Telegram DMCA](https://t.me/dmcatelegram)!
+	- Make a Channel for Storing Files. We will use that as Database. Channel must be Private! Else you will be Copyright.
 - `BOT_OWNER` - Bot Owner UserID
 	- Put your Telegram UserID for doing Broadcast.
 - `DATABASE_URL` - MongoDB Database URI
