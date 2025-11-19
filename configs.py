@@ -1,3 +1,7 @@
+# Don't Remove Credit Tg - @VJ_Bots
+# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+# Ask Doubt on telegram @KingVJ01
+
 import os
 
 class Config(object):
@@ -6,8 +10,8 @@ class Config(object):
   BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
   BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
   DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
-  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "MoneyKamalo.com")
-  SHORTLINK_API = os.environ.get('SHORTLINK_API', "0eefb93e1e3ce9470a7033115ceb1bad13a9d674")
+  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "")
+  SHORTLINK_API = os.environ.get('SHORTLINK_API', "")
   BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
   DATABASE_URL = os.environ.get("DATABASE_URL", "")
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
